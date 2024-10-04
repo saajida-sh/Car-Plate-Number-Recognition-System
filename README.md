@@ -14,7 +14,7 @@ Key Features:
 ## Contents
 - **dataset_yolo_formatting.ipynb**: A notebook for formatting the dataset for YOLO training.
 - **yolo_training.ipynb**: A notebook that contains the implementation and training of the YOLO model.
-- **yolo_prediction_image_video.ipynb**: A notebook for making predictions on both images and videos.
+- **yolo_recognition_model.ipynb**: A notebook for making predictions on both images and videos.
 
 ## Technologies Used
 - **YOLOv5**: For object detection of car license plates.
