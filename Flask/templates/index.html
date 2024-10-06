@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car License Plate Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Car License Plate Recognition</h1>
+        <form action="/" method="post" enctype="multipart/form-data" class="upload-form">
+            <div class="file-upload-container">
+                <input type="file" name="file" accept="image/*" required>
+                <input type="submit" value="Upload">
+            </div>
+        </form>
+    </div>
+
+    {% if ocr_texts %}
+    <div class="license-plate-container">
+        <h2>License Plate Number:</h2>
+        <div class="license-plate-box">{{ ocr_texts[0] }}</div>  <!-- Display the first detected license plate number -->
+    </div>
+    {% endif %}
+
+    <div class="images-container">
+        {% if original_image %}
+        <div class="image-item">
+            <h2>Original Image:</h2>
+            <img src="{{ url_for('static', filename='uploads/' + original_image) }}" alt="Original Image">
+        </div>
+        
+        <div class="image-item">
+            <h2>Result Image:</h2>
+            <img src="{{ url_for('static', filename='uploads/' + result_image) }}" alt="Result Image">
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

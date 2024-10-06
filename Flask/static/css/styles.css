@@ -1,0 +1,86 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    background-color: #fbf2f2; /* Background color for the container */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 15px; /* Inner padding */
+    margin-bottom: 25px; /* Space below the container */
+}
+
+.upload-form {
+    display: flex;
+    justify-content: center;
+}
+
+.file-upload-container {
+    display: flex;
+    align-items: center;
+}
+
+input[type="file"] {
+    padding: 10px;
+    margin-right: 10px; /* Space between input and button */
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.license-plate-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.license-plate-box {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px; /* Rounded edges */
+    background-color: white; /* Background color */
+    font-size: 24px; /* Font size */
+    color: #333; /* Text color */
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-around; /* Space between images */
+    margin-top: 20px;
+}
+
+.image-item {
+    text-align: center; /* Center text below images */
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
