@@ -2,7 +2,6 @@ from flask import Flask, request, render_template
 import os
 import cv2
 import easyocr
-import pathlib
 import torch
 import string
 import numpy as np
@@ -10,9 +9,6 @@ from PIL import Image
 import io
 
 app = Flask(__name__)
-
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
 
 # Load the YOLO model
 model = torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5_trained_model/weights/best.pt', force_reload=True)  # Adjust the path to your model
