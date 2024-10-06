@@ -15,6 +15,7 @@ Key Features:
 - **dataset_yolo_formatting.ipynb**: A notebook for formatting the dataset for YOLO training.
 - **yolo_training.ipynb**: A notebook that contains the implementation and training of the YOLO model.
 - **yolo_recognition_model.ipynb**: A notebook for making predictions on both images and videos.
+- **Flask** Folder: Contains Flask app and related contents 
 
 ## Technologies Used
 - **YOLOv5**: For object detection of car license plates.
